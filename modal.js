@@ -1,17 +1,17 @@
 // @ts-check
-EventTarget.prototype.on = function (eventName, callback) {
-    this.addEventListener(eventName, callback)
-}
+// EventTarget.prototype.on = function (eventName, callback) {
+//     this.addEventListener(eventName, callback)
+// }
 
-/** @param {string} selector */
-function $(selector) {
-    return document.querySelector(selector)
-}
+// /** @param {string} selector */
+// function $(selector) {
+//     return document.querySelector(selector)
+// }
 
-const modal = $('.modal')
-const body = $('body')
+const modal = document.querySelector('.modal')
+const body = document.querySelector('body')
 
-$('#open-modal').on('click', () => {
+document.querySelector('#open-modal').addEventListener('click', () => {
     modal.classList.add('modal_show')
     body.classList.add('disable-scroll')
 })
@@ -29,10 +29,10 @@ function closeModal () {
         modal.removeEventListener('animationend', animationendCallback)
     }
     // Вешаем слушатель через addEventListenter
-    modal.on('animationend', animationendCallback)
+    modal.addEventListener('animationend', animationendCallback)
 }
 
-$('#close-modal').on('click', closeModal)
-modal.on('click', (event) => {
+document.querySelector('#close-modal').addEventListener('click', closeModal)
+modal.addEventListener('click', (event) => {
     if (event.target === modal) closeModal()
 })

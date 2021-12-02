@@ -1,0 +1,23 @@
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.row div {
+  background-color: burlywood;
+}
+
+.row .col-2 {
+  width: 16.66667%;
+}
+
+.row .col-3 {
+  width: 25%;
+}
+
+.row .col-4 {
+  width: calc(100% * 4 / 12);
+}
+/*# sourceMappingURL=index.css.map */

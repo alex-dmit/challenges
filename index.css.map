@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,IAAI,CAAC;EACD,OAAO,EAAE,IAAI;EACb,GAAG,EAAE,IAAI;CAiBZ;;AAnBD,AAII,IAJA,CAIA,GAAG,CAAC;EACA,gBAAgB,EAAE,SAAS;CAC9B;;AANL,AAQI,IARA,CAQA,MAAM,CAAC;EACH,KAAK,EAAE,SAAa;CACvB;;AAVL,AAYI,IAZA,CAYA,MAAM,CAAC;EACH,KAAK,EAAE,GAAa;CACvB;;AAdL,AAgBI,IAhBA,CAgBA,MAAM,CAAC;EACH,KAAK,EAAE,mBAAmB;CAC7B",
+    "sources": [
+        "index.scss",
+        "bootstrap-grid.scss"
+    ],
+    "names": [],
+    "file": "index.css"
+}
